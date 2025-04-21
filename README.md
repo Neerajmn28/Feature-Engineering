@@ -1,4 +1,4 @@
-## What is Feature Engineering?
+# What is Feature Engineering?
 Feature engineering is the process of transforming raw data into features that better represent the underlying problem to the predictive models, improving their performance.
 ![Image](https://github.com/user-attachments/assets/6fa52ffe-2169-4c9e-aaf9-ae30bde6c0da)
 
@@ -13,8 +13,12 @@ Make models more interpretable.
 
 Handle missing or imbalanced data effectively.
 
-🔧 Common Feature Engineering Techniques
-1. One-Hot Encoding
+
+
+
+# 🔧 Common Feature Engineering Techniques
+
+## 1. One-Hot Encoding
 Converts categorical variables into binary (0/1) columns.
 
 Example: Color = [Red, Blue] → Red = [1,0], Blue = [0,1]
@@ -29,7 +33,7 @@ Increases dimensionality if there are many categories (curse of dimensionality).
 
 Not ideal for tree-based models with high-cardinality features.
 
-2. Label Encoding
+## 2. Label Encoding
 Assigns a unique integer to each category.
 
 Example: Red = 0, Blue = 1, Green = 2
@@ -42,7 +46,7 @@ Works well with tree-based models (like Random Forest, XGBoost).
 ❌ Disadvantages:
 Implies ordinal relationship where there might be none (can mislead linear models).
 
-3. Ordinal Encoding
+## 3. Ordinal Encoding
 Similar to label encoding but used for ordered categories.
 
 Example: Low = 1, Medium = 2, High = 3
@@ -55,7 +59,7 @@ Useful for ordinal variables (e.g., ratings, education levels).
 ❌ Disadvantages:
 Assumes uniform spacing, which may not reflect real-world differences.
 
-4. SMOTE (Synthetic Minority Over-sampling Technique)
+## 4. SMOTE (Synthetic Minority Over-sampling Technique)
 Creates synthetic examples of the minority class to balance imbalanced datasets.
 
 ✅ Advantages:
@@ -68,7 +72,7 @@ Can generate noisy or less meaningful synthetic samples.
 
 Not ideal for high-dimensional sparse data.
 
-5. Null Value Imputation
+## 5. Null Value Imputation
 Filling in missing values using strategies like:
 
 Mean/Median/Mode
@@ -87,7 +91,7 @@ Can introduce bias if not handled thoughtfully.
 
 Model might learn patterns based on the imputed value itself.
 
-6. Upsampling and Downsampling (for Imbalanced Data)
+## 6. Upsampling and Downsampling (for Imbalanced Data)
 Upsampling: Increases the minority class by duplication or synthesis (e.g., SMOTE).
 
 Downsampling: Reduces the majority class to balance.
@@ -100,7 +104,7 @@ Upsampling can cause overfitting.
 
 Downsampling can lead to loss of information.
 
-7. Target Guided One-Hot Encoding
+## 7. Target Guided One-Hot Encoding
 Categories are ordered based on the target variable mean, then encoded.
 
 ✅ Advantages:
