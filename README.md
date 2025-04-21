@@ -1,5 +1,6 @@
-🌟 What is Feature Engineering?
+## What is Feature Engineering?
 Feature engineering is the process of transforming raw data into features that better represent the underlying problem to the predictive models, improving their performance.
+![Image](https://github.com/user-attachments/assets/6fa52ffe-2169-4c9e-aaf9-ae30bde6c0da)
 
 ✅ Why is Feature Engineering Important?
 Because machine learning models learn from features, not raw data. Properly engineered features can:
